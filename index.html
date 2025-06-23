@@ -1,8 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share bookmarks</title>
     <script type="module" src="script.js"></script>
   </head>
   <body>
+
+    <main>
+      <form action="">
+        <Select id="select-users"></Select>
+        <input type="text" id="url-input" placeholder="Enter a url">
+        <input type="text" id="title-input" placeholder="Enter a title">
+        <textarea name="description" id="description" placeholder="Please enter a description"></textarea>
+        <button type="button" id="submit-btn">Submit</button>
+      </form>
+      <section id="show-bookmarks"></section>
+    </main>
   </body>
 </html>

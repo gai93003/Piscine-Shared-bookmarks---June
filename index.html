@@ -6,16 +6,25 @@
     <title>Share bookmarks</title>
     <script type="module" src="script.js"></script>
   </head>
+  <style>
+    form {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  </style>
   <body>
 
     <main>
       <form action="">
-        <Select id="select-users"></Select>
-        <input type="text" id="url-input" placeholder="Enter a url">
-        <input type="text" id="title-input" placeholder="Enter a title">
-        <textarea name="description" id="description" placeholder="Please enter a description"></textarea>
+        <label for="">Users:
+        <select id="select-users"></select>
+        </label>
+        <input type="text" id="url-input" placeholder="Enter a url" required>
+        <input type="text" id="title-input" placeholder="Enter a title" required>
+        <textarea name="description" id="description" placeholder="Please enter a description" required></textarea>
         <button type="button" id="submit-btn">Submit</button>
       </form>
+      <section id="inform-user"></section>
       <section id="show-bookmarks"></section>
     </main>
   </body>
